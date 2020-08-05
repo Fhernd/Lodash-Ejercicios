@@ -1,6 +1,6 @@
 // Ejercicio 94: Demostrar el uso de la función reject() sobre una colección de objetos.
 
-const _ = require('lodash');Lodash Ejercicio: 94 Demostrar el Uso de la Función reject() sobre una Colección de Objetos
+const _ = require('lodash');
 
 let personas = [
     {id: 1001, nombre: 'Danny', activo: true},
