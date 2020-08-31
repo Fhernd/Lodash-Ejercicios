@@ -1,0 +1,33 @@
+<!-- Ejercicio 109: Demostrar el uso de la función DEbounce() para detectar cambio tamaño ventana del navegador.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodash - Ejercicio 109</title>
+    
+</head>
+<body>
+    <h1>Lodash - Ejercicio 109</h1>
+
+    <p id="resultadoRedimensionamiento"></p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(() => {
+            $(window).on('resize', _.debounce(redimensionarComponentes, 2000));
+        });
+
+        function redimensionarComponentes() {
+            let ancho = window.innerWidth;
+            let alto = window.innerHeight;
+
+            $('#resultadoRedimensionamiento').text(`Ancho: ${ancho} - Alto: ${alto}`);
+        }
+    </script>
+</body>
+</html>
