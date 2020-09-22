@@ -1,0 +1,28 @@
+<!-- Ejercicio 141: Demostrar el uso de la función isElement() para validar si un valor es un elemento HTML.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodash - Ejercicio 141</title>
+    
+</head>
+<body>
+    <h1>Lodash - Ejercicio 141</h1>
+
+    <p id="resultado1"></p>
+    <p id="resultado2"></p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(() => {
+            $('#resultado1').text(_.isElement(document.body));
+            $('#resultado2').text(_.isElement('<body>'));
+        });
+    </script>
+</body>
+</html>
