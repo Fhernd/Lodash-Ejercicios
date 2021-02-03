@@ -1,6 +1,6 @@
 // Ejercicio 250: Demostrar el uso básico de la función chain().
 
-const _ = require('lodash');\
+const _ = require('lodash');
 
 let computadores = [
     {id: 1001, marca: 'Clone', cpu: 'Intel Core i7'},
